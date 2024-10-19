@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games - CHJ Internet Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional Styles for Game Thumbnails */
+        .game-thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .thumbnail {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px; /* Fixed width for uniformity */
+            height: 450px; /* Adjusted height for better text fit */
+            transition: transform 0.3s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 200px; /* Fixed height for uniformity */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        .thumbnail h3 {
+            padding: 10px;
+            color: #00d1ff;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 0; /* Remove default margin */
+        }
+        .thumbnail p {
+            padding: 10px 15px; /* Padding for better spacing */
+            color: #f2f2f2;
+            font-size: 1rem;
+            text-align: center;
+            flex-grow: 1; /* Allow text to take remaining space */
+        }
+        .download-button {
+            background-color: #00d1ff;
+            color: #0d0d0d;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            margin-bottom: 10px; /* Space below button */
+            text-align: center; /* Center button text */
+        }
+        .download-button:hover {
+            background-color: #00aacc; /* Darker blue on hover */
+        }
+        /* Powered by AMD Section */
+        .powered-by {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0;
+            padding: 20px 0;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+        .powered-by img {
+            width: 150px; /* Adjust size as needed */
+            margin-bottom: 10px;
+        }
+        .powered-by p {
+            color: #f2f2f2;
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Games Section -->
+    <section class="container">
+        <h2>Our Games</h2>
+        <div class="game-thumbnails">
+            <div class="thumbnail">
+                <img src="images/crossfire-thumbnail.jpg" alt="Crossfire Thumbnail">
+                <h3>Crossfire</h3>
+                <p>Join the thrilling world of Crossfire, a fast-paced tactical FPS where teams compete for dominance. With strategic gameplay and a variety of modes, every match brings a new challenge!</p>
+                <a href="https://crossfire.z8games.com/" class="download-button" target="_blank">Download Crossfire</a>
+            </div>
+            <div class="thumbnail">
+                <img src="images/valorant-thumbnail.jpg" alt="Valorant Thumbnail">
+                <h3>Valorant</h3>
+                <p>Enter Valorant, a character-based tactical shooter that blends precise gunplay with unique agent abilities. Assemble your team and dominate the battlefield with strategy and skill!</p>
+                <a href="https://playvalorant.com/" class="download-button" target="_blank">Download Valorant</a>
+            </div>
+            <div class="thumbnail">
+                <img src="images/dota2-thumbnail.jpg" alt="Dota 2 Thumbnail">
+                <h3>Dota 2</h3>
+                <p>Dota 2 is a multiplayer online battle arena (MOBA) game where two teams of five players compete to destroy the opposing team's Ancient. Strategy, teamwork, and skill are essential to victory!</p>
+                <a href="https://store.steampowered.com/app/570/Dota_2/" class="download-button" target="_blank">Download Dota 2</a>
+            </div>
+            <div class="thumbnail">
+                <img src="images/lol-thumbnail.jpg" alt="League of Legends Thumbnail">
+                <h3>League of Legends</h3>
+                <p>League of Legends is a highly competitive MOBA where players control champions with unique abilities. Work with your team to outsmart and outplay the enemy in this epic battle for supremacy!</p>
+                <a href="https://www.leagueoflegends.com/en-us/" class="download-button" target="_blank">Download League of Legends</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powered by AMD Section -->
+    <div class="powered-by">
+        <img src="images/powered-by-amd.jpg" alt="Powered by AMD">
+        <p>Powered by AMD for an unparalleled gaming experience.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; CHJ Internet Shop 2024. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script src="scripts.js"></script>
+
+</div>
+
+</div>
+</body>
+</html>

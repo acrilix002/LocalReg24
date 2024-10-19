@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tournament Bracket - Crossfire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0d0d0d;
+            color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Styles matching index.html */
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu-toggle {
+            display: none; /* Hide menu toggle (if used only in mobile view) */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around; /* Match alignment to index.html */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f2f2f2;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d1ff;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto; /* Increased margin for spacing */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #00d1ff;
+            background: linear-gradient(to right, #00d1ff, #00ff87);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Bracket Image Styles */
+        .bracket-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0, 209, 255, 0.7); /* Enhanced shadow */
+            transition: transform 0.3s ease-in-out; /* Add smooth zoom effect */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Image zoom on hover */
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            background-color: #1a1a1a;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .contact-section h2, .contact-section h3 {
+            color: #00d1ff;
+        }
+
+        .contact-section a {
+            color: #00ff87;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-section a:hover {
+            color: #00d1ff;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #0d0d0d;
+            padding: 20px 0;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        /* Map Container */
+        .map-container {
+            margin-top: 20px;
+            border: 2px solid #00d1ff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tournament Bracket Section -->
+    <div class="container">
+        <h1>Crossfire Tournament Bracket</h1>
+        <p>Here is the tournament bracket for our Crossfire online competition!</p>
+
+        <!-- Bracket Image with Enhanced Visuals -->
+        <div class="bracket-container">
+            <img src="images/Bracket.jpg" alt="Tournament Bracket">
+        </div>
+    </div>
+
+ 
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; CHJ Internet Shop 2024. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
